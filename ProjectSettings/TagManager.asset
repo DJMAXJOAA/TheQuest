@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tile
+  - Enemy
+  - Weapon
+  - Outline
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Tile
   - Water
   - UI
-  - 
-  - 
+  - Outline
+  - Enemy
   - 
   - 
   - 

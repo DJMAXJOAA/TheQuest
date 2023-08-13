@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public interface IStrategy
 {
-
+    void MoveStrategy(Enemy enemy);
 }
