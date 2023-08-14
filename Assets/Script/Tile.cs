@@ -14,7 +14,7 @@ public class Tile : MonoBehaviour
     public bool objectOnTop = false;
 
     void Update()
-    {
+    { 
         if(objectOnTop)
         {
             GetComponent<Renderer>().material.color = Color.black;
@@ -22,6 +22,7 @@ public class Tile : MonoBehaviour
         else
         {
             GetComponent<Renderer>().material.color = Color.white;
+            TargetObject = null;
         }
     }
     public void CheckNearObject()

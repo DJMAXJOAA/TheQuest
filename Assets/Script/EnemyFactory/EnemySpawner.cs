@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    public List<GameObject> enemies = new List<GameObject>();
+
     public List<GameObject> enemyList;
     EnemyFactory[] enemySpawner = null;
 
@@ -14,20 +16,20 @@ public class EnemySpawner : MonoBehaviour
         enemySpawner[1] = new Stage2();
         enemySpawner[2] = new Stage3();
 
-        Stage1();
+        Stage3();
     }
 
     public void Stage1()
     {
-        enemySpawner[0].CreateEnemy(enemyList);
+        enemySpawner[0].CreateEnemy(enemyList, enemies);
     }
     public void Stage2()
     {
-        enemySpawner[1].CreateEnemy(enemyList);
+        enemySpawner[1].CreateEnemy(enemyList, enemies);
     }
     public void Stage3()
     {
-        enemySpawner[2].CreateEnemy(enemyList);
+        enemySpawner[2].CreateEnemy(enemyList, enemies);
     }
 
 }

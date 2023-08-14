@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Stage2 : EnemyFactory
 {
-    public override void CreateEnemy(List<GameObject> enemyList)
+    public override void CreateEnemy(List<GameObject> enemyList, List<GameObject> enemies)
     {
-        enemies.Add(enemyList[0]);
-        enemies.Add(enemyList[0]);
-        enemies.Add(enemyList[0]);
-        enemies.Add(enemyList[1]);
-        enemies.Add(enemyList[1]);
+        enemies.Add(Instantiate(enemyList[0]));
+        enemies.Add(Instantiate(enemyList[0]));
+        enemies.Add(Instantiate(enemyList[0]));
+        enemies.Add(Instantiate(enemyList[1]));
+        enemies.Add(Instantiate(enemyList[1]));
     }
 }
