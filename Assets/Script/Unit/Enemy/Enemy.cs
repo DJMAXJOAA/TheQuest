@@ -21,7 +21,7 @@ public abstract class Enemy : Unit
         int randomPosX = Random.Range(0, 11);
         int randomPosZ = Random.Range(0, 11);
 
-        Vector3 randomPos = new Vector3(randomPosX, 2, randomPosZ);
+        Vector3 randomPos = new Vector3(randomPosX, 1.5f, randomPosZ);
         transform.position = randomPos;
     }
 }

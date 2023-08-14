@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
         enemySpawner[0] = new Stage1();
         enemySpawner[1] = new Stage2();
         enemySpawner[2] = new Stage3();
-
         Stage3();
     }
 
